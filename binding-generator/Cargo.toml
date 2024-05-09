@@ -21,3 +21,4 @@ regex = "1"
 
 [features]
 clang-runtime = ["clang/runtime", "clang-sys/runtime"]
+clang-static = ["clang/static", "clang-sys/static"]

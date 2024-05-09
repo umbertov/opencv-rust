@@ -196,6 +196,7 @@ wechat_qrcode = []
 
 # General features
 clang-runtime = ["opencv-binding-generator/clang-runtime"]
+clang-static = ["opencv-binding-generator/clang-static"]
 
 [package.metadata.docs.rs]
 no-default-features = true
