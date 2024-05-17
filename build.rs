@@ -163,6 +163,7 @@ fn get_version_from_headers(header_dir: &Path) -> Option<Version> {
 		if let Some(line) = line.strip_prefix("#define CV_VERSION_") {
 			let mut parts = line.split_whitespace();
 			if let (Some(ver_spec), Some(version)) = (parts.next(), parts.next()) {
+				eprintln!("Found version part in headers: {ver_spec} {version}");
 				match ver_spec {
 					"MAJOR" => {
 						major = Some(version.parse().ok()?);
